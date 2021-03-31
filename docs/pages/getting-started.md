@@ -1,8 +1,8 @@
-## Hello World
+# Hello World
 
-### Installing
+## Installing
 wrkjghbalkrgh.wlg
 
-### Configuration
+## Configuration
 
-### Folder Structure
+## Folder Structure
