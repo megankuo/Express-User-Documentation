@@ -1,7 +1,20 @@
 site_name: My Docs
+nav:
+  - Home: "index.md"
+  - Getting Started: "pages/getting-started.md"
+
+repo_url: https://github.com/megankuo/Express-User-Documentation
+
+repo_name: megankuo/Express-User-Documentation
 
 theme:
   name: material
+
+  features:
+    - navigation.tabs
+
+  icon:
+    repo: fontawesome/brands/git-alt
 
   # 404 page
   static_templates:
