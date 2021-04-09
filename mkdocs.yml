@@ -7,6 +7,42 @@ repo_url: https://github.com/megankuo/Express-User-Documentation
 
 repo_name: megankuo/Express-User-Documentation
 
+
+markdown_extensions:
+  - toc:
+      toc_depth: 3
+  - attr_list
+  - footnotes
+  - admonition
+  - codehilite
+  - def_list
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.betterem:
+      smart_enable: all
+
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.keys
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed
+  - pymdownx.highlight:
+      #   linenums: true # Line numbering
+      linenums_style: pymdownx.inline
+      #   use_pygments: false
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
 theme:
   name: material
 
@@ -28,8 +64,8 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: blue grey
+      accent: deep purple
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
@@ -37,8 +73,8 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue
-      accent: blue
+      primary: red
+      accent: red
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -56,6 +92,29 @@ theme:
   icon:
     logo: logo
 
-markdown_extensions:
-  - toc:
-      toc_depth: 3
+
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - js/tables.js
+  - js/config.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
+  - css/extra.css
+
+extra:
+  social:
+
+
+    - icon: fontawesome/brands/github
+      link: https://github.com/megankuo/Express-User-Documentation
+      name: GitHub
+
+copyright: Copyright &copy; 2021 - Megan Kuo, Linda Nguyen, and Jamie Samuel
