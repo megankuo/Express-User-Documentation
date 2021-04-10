@@ -45,10 +45,14 @@ The main sections of the documentation are summarized below:
 
 
 ## Typographical Conventions
+MORE CONTENT HERE
+
+Typically, code snippets will include the filename at the top. Snippets will also have clickable numbers that can be useful 
+if you do not understand what a specific piece of code does. See an example of this below.
 
 ## Notes and Warning Messages
 
-Throughout the documentation, we will use message blocks to alert you to relevant information.
+Throughout the documentation, we will use message blocks to alert you to relevant information. 
 Each possible message block, from most important to least important:
 
 !!! danger
