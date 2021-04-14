@@ -39,7 +39,7 @@ The main sections of the documentation are summarized below:
 
 - **[Elaboration on Project Structure]()**
 - **[Configuring Project for Collaboration]()**
-- **[Installing Express.js]()**
+- **[Installing Express.js](express-getting-started.md)**
 - **[Adding Routes]()**
 - **[Middleware]()**
 
