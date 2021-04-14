@@ -117,7 +117,7 @@ app.listen(port, () => { (5)
 !!! Info
 Localhost is the default name that refers to the current computer that is being used to run the virtual server.
 
-1. Run your application from the Terminal.
+8. Run your application from the Terminal.
 > node app.js
 
 
@@ -130,6 +130,9 @@ If successful, you should see the success message that you typed in the app.list
 
 !!! success
 ![Example of the Terminal displaying "Example app listening at http://localhost:3000" when the application is run](images/installing-express-step13.png)
+
+
+
 
 9. Open up your internet browser of choice and type "http://localhost:3000/" into the address bar.
 
