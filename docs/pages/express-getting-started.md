@@ -13,9 +13,19 @@ In order to provide better clarity, this guide will focus on providing instructi
 
 1. Open VSC and look for the navigation bar and select [File] > [Open Folder] to find the new folder that you created.
 
+
+
+
 At this point, your folder will open in VSC. The folder should be empty because you have not created any contents for your application yet.
 
+
+
+
 2. Select [Terminal] > [New Terminal] from the navigation bar.
+
+
+
+
 
 At this point, a new Terminal window will open. Please note that the Terminal window will be used for the majority of this section, so you will want to keep it open.
 
@@ -23,6 +33,9 @@ At this point, a new Terminal window will open. Please note that the Terminal wi
 ![Example of a Terminal window opened in VSC](images/installing-express-step1.png)
 
 3. Type "npm init" without the quotations in Terminal.
+
+
+
 
 At this point, you will be prompted to create a *package.json* file. For the purpose of this guide, you can go ahead and press enter 3 times or until you see a prompt to create an entry point.
 
@@ -34,6 +47,9 @@ A package.json file is a JSON file that contains metadata related to the project
 
 4. Type "app.js" for the *entry point* and press enter for the remainder of the prompts in Terminal.
 
+
+
+
 If you have successfully completed this step, you should see a package.json file inside of the Explorer tab in the vertical navigation bar.
 
 !!! success
@@ -43,6 +59,9 @@ If you have successfully completed this step, you should see a package.json file
 An entry point is the JavaScript file that will be used to execute your file. It is considered good practice to name your entry point "app.js".
 
 5. Type "npm install express --save" (or the short form *npm install express*) in Terminal.
+
+
+
 
 At this point, you will see the Terminal begin to download, install, and prepare Express for your project. Once completed, you will see a new folder called *node_modules* and a file called *package-lock.json* in the Explorer tab.
 
@@ -60,21 +79,21 @@ The package-lock.json file is used to determine the specific versions of depende
 7. Type the following code inside of your app.js file:
 
 ```javascript
-const express = require('express')
+const express = require('express');
 ```
 This line of code will import the express module into your app.js entry point file.
 
 8. Type the next line of code inside of your app.js file:
 
 ```javascript
-const app = express()
+const app = express();
 ```
 This line of code will create a new Express application.
 
 9. Type the remaining lines of code inside of your app.js file:
 
 ```javascript
-const port = 3000
+const port = 3000;
 ```
 
 This line of code will store the number of the port that we will be using to connect to your localhost.
@@ -86,8 +105,8 @@ Localhost is the default name that refers to the current computer that is being 
 
 ```javascript
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+  res.send('Hello World!');
+});
 ```
 The GET method route will allow our application to send the string "Hello World!" as a response when we connect to our localhost. You will be learning more about HTTP methods like GET in a later section.
 
@@ -95,8 +114,8 @@ The GET method route will allow our application to send the string "Hello World!
 
 ```javascript
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+  console.log(`Example app listening at http://localhost:${port}`);
+});
 ```
 The app.listen() function is used to listen to a specified port for connections. For this application, we are using port 3000.
 
