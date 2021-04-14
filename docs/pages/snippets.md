@@ -31,7 +31,6 @@ Possible project structure. This is not written in stone, MVC and other architec
     |-- server.js             # Application Server 
 ```
 
-
 ``` { .js .annotate }
 /** .eslintrc.js */
 
