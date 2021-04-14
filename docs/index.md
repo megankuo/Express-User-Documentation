@@ -70,6 +70,5 @@ Each possible message block, from most important to least important:
 !!! Info
     Indicates additional information or tips.
 
-
 !!! success
-    Indicates what success looks like. 
+    Indicates what success looks like.
