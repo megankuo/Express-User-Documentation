@@ -39,7 +39,7 @@ The main sections of the documentation are summarized below:
 
 - **[Elaboration on Project Structure]()**
 - **[Configuring Project for Collaboration]()**
-- **[Installing Express.js]()**
+- **[Installing Express.js](express-getting-started.md)**
 - **[Adding Routes]()**
 - **[Middleware]()**
 
@@ -70,6 +70,5 @@ Each possible message block, from most important to least important:
 !!! Info
     Indicates additional information or tips.
 
-
 !!! success
-    Indicates what success looks like. 
+    Indicates what success looks like.
