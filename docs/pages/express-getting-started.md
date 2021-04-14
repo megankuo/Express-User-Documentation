@@ -47,10 +47,10 @@ In order to provide better clarity, this guide will focus on providing instructi
    ![Example successfully creating a package.json file](images/installing-express-step5.png)
 
    !!! Info
-The node_modules folder contains all of the dependencies from npm that your application requires to run.
+   The node_modules folder contains all of the dependencies from npm that your application requires to run.
 
    !!! Info
-The package-lock.json file is used to determine the specific versions of dependencies for your modules.
+   The package-lock.json file is used to determine the specific versions of dependencies for your modules.
 
 6. Select [File] > [New File] from the navigation bar and name the file "app.js".
 7. Type the following code inside of your app.js file:
