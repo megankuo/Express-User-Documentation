@@ -1,7 +1,9 @@
 site_name: Express User Documentation
 nav:
   - Home: "index.md"
-  - Getting Started: "pages/snippets.md"
+  - Snippets (TO DELETE): "pages/snippets.md"
+  - Configuration: "pages/configuration.md"
+  - Installing Express: "pages/express-getting-started.md"
 
 repo_url: https://github.com/megankuo/Express-User-Documentation
 

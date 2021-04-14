@@ -47,8 +47,16 @@ The main sections of the documentation are summarized below:
 ## Typographical Conventions
 MORE CONTENT HERE
 
-Typically, code snippets will include the filename at the top. Snippets will also have clickable numbers that can be useful 
+Some code snippets may have clickable numbers that can be useful 
 if you do not understand what a specific piece of code does. See an example of this below.
+
+``` { .js .annotate }
+const sum = (numbers) => {
+    return numbers.reduce((a, b) => a + b, 0); // (1)
+};
+```
+
+1. Return the sum of the numbers in the list.
 
 ## Notes and Warning Messages
 

@@ -3,7 +3,7 @@
 This section will focus on helping you set up an [**Express.js**](https://expressjs.com/) (or informally *Express*) is a web application framework for [**Node.js**](https://nodejs.org/). Express was originally released as free and open-source software, and it is used to provide server-side logic for web and mobile applications. Express also used in many popular development stacks like MEAN.
 
 !!! Info
-The MEAN Stack is a popular web development stack that is mainly used to create cloud-based applications using [**MongoDB**](https://www.mongodb.com/), [**Express.js**](https://expressjs.com/), [**AngularJS**](https://angularjs.org/), and [**Node.js**](https://nodejs.org/). It is popular because the MEAN stack can be written with only [**JavaScript**](https://www.javascript.com/).
+    The MEAN Stack is a popular web development stack that is mainly used to create cloud-based applications using [**MongoDB**](https://www.mongodb.com/), [**Express.js**](https://expressjs.com/), [**AngularJS**](https://angularjs.org/), and [**Node.js**](https://nodejs.org/). It is popular because the MEAN stack can be written with only [**JavaScript**](https://www.javascript.com/).
 
 ## Installing Express.js
 
