@@ -189,4 +189,15 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 ```
+
+## Conclusion
+By the end of this section, you will have successfully learned the following:
+
+- How to write a route to set the desired response to different HTTP requests
+- How to use the Express Router class to group routes
+- How to export and import the router for use in separate file
+
+Great job 🤗. You can go ahead and click on the link below to move on to the next step:
+
+**[Using Middlewares]()**
 [^1]: [HTTP Request Methods](https://www.w3schools.com/tags/ref_httpmethods.asp).
