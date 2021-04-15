@@ -33,7 +33,7 @@ Before you are able to adding code style and formatter rules, you need to instal
 
 
 4. Create a `.prettierrc.js` file in the root of the directory:
-     > touch .prettierrc.js
+> touch .prettierrc.js
 
 5. Open the `.prettierrc.js` file created above and add the following formatting rules:
 
@@ -90,7 +90,7 @@ As an example, you will use the [Airbnb JavaScript Style Guide](https://github.c
 and add a custom rule for illustrative purposes.
 
 1. Install and save the necessary peer dependencies to use the Airbnb style guide:
-> npm install --save-dev eslint-config-prettier eslint-plugin-prettier
+> npm install --save-dev eslint-config-airbnb-base eslint-plugin-import
 
 2. Add `'airbnb-base'` to the `extends` array in the `.eslintrc.js` file:
    
