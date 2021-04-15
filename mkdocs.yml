@@ -3,8 +3,12 @@ nav:
   - Home: "index.md"
   - Configuration: "pages/configuration.md"
   - Installing Express: "pages/installing-express.md"
-  - Routes: "pages/routes.md"
+  - Routes & Routers: "pages/routes.md"
   - Middleware: "pages/middleware.md"
+  - Project Structure: "pages/project-structure.md"
+  - Troubleshooting: "pages/troubleshooting.md"
+  - Glossary: "pages/glossary.md"
+
 
 repo_url: https://github.com/megankuo/Express-User-Documentation
 
