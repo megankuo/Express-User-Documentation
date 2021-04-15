@@ -19,7 +19,7 @@ A simple route is comprised of the following components
 app.method(path, handler)
 ```
 !!! Info "Handler functions"
-    The handler will be often be an [anonymous function](https://www.javascripttutorial.net/javascript-anonymous-functions/) written as either a regular function or an [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). There may be more than one handler function per route.
+    The handler will be often be an [anonymous function](https://www.javascripttutorial.net/javascript-anonymous-functions/) written as either a regular function or an [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). You may see more than one handler function per route in more complex routes.
 
 ## Setting up routes
 We will cover the 2 most generic route methods: `get` and `post`. 
@@ -53,47 +53,95 @@ As an example, let's create a route to display a contact page in the form of a s
     `app.get('/contact')`
     
 2.  Insert an empty handler that has the parameters for the request and response objects  
-    `app.get('/', (req, res) => { })`
+    `app.get('/contact', (req, res) => { })`
 
 3.  Insert into the handler function, the action you want to perform.  
-    Use `res.sendFile()` to serve a static HTML page.
-```js
-app.get('/contact', function(req, res) {
-  res.sendFile('contact.html');
-});
-```
+    ```js
+    app.get('/contact', (req, res) => {
+      res.sendFile('contact.html'); // (1)
+    });
+    ```
+    (1) Use `res.sendFile()` to serve a static HTML page.
 
 ### Sending data using POST 
 Suppose you have a form on your contact page for users to submit a message. You would use a POST request so that you can retrieve the submitted data and store it somewhere.
 
 For example, we will use the following form.
 ```html
-<form method="POST" action="/submit-form">
+<form method="POST" action="/contact">
   <input type="email" name="email">
   <input type="text" name="message">
   <input type="submit">
 </form>
 ```
+!!! warning "Action & name attributes"
+    The action attribute must match the path that will match the route path where we insert the handler logic.  
+    The name attribute for each input will become the key/property of the object that the form will send to your server.
+
 
 1.  Start with the route method and insert the path  
-    `app.post('/contact')`
-> Note that you can use the same path with different methods to perform different actions
+    `app.post('/contact')` // (1)
+(1) Note that you can use the same path with different methods to perform different actions
     
 2.  Insert an empty handler that has the parameters for the request and response objects  
     `app.post('/contact', (req, res) => { })`
 
 3.  Insert into the handler function, the action you want to perform.  
-    Use `res.redirect()` to redirect your user to a confirmation page.
-```js
-app.post('/contact', function(req, res) {
-  const email = req.body.email;
-  const message = req.body.message;
-  // insert code to do whateever you want with the form data
-  res.redirect('confirmation.html');
-});
-```
+    ```js
+    app.post('/contact', (req, res) => {
+      const email = req.body.email; // (1)
+      const message = req.body.message;
+      // code to process the form data
+      res.redirect('/confirmation'); // (2)
+    });
+    ```
+    (1) `req.body` it the object containing the input names and values from the form that was posted.
+    (2) Use `res.redirect()` to redirect your user to another page/route to end your handler function.
 
-## Routers
+!!! success
+    At this point, you have the tools to set up many different routes in your entry point file. Next we will cover how to refactor your routes so the entry file is more manageable.  
+    ```js
+    const express = require('express');
+    const router = express.Router();
+    const port = 3000;
+
+    app.get('/', (req, res) => {
+      res.send('Hello World!');
+    })
+
+    app.get('/contact', (req, res) => {
+      res.sendFile('contact.html');
+    });
+
+    app.post('/contact', (req, res) => {
+      const email = req.body.email;
+      const message = req.body.message;
+      // code to process the form data
+      res.redirect('/confirmation');
+    });
+
+    app.get('/reviews', (req, res) => {
+      res.sendFile('reviews.html');
+    });
+
+    app.get('/reviews/add', (req, res) => { // (1)
+      // code to add a review
+      res.redirect('/reviews');
+    })
+
+    app.get('/reviews/delete', (req, res) => {
+      // code to delete a review
+      res.redirect('/reviews');
+    })
+
+
+    app.listen(port, () => {
+      console.log(`Example app listening at http://localhost:${port}`)
+    })
+    ```
+    (1) Note that you can use multi-level paths as well.
+
+## Setting up routers
 As the scope of your project grows or scales, you may find the need to organize your routes for ease of maintenance. Express provides a tool to help achieve this called a **Router**.
 
 If you had several related endpoints, it would be more manageable to organize these related routes into their own file. The Express router can help you achieve this by allowing you to export this grouping into your entry point file. The entry point file acts as a main hub to direct requests to the appropriate endpoints.
@@ -101,36 +149,39 @@ If you had several related endpoints, it would be more manageable to organize th
 ### Router Example
 We will add onto our previous example with the contact page routes. At the moment, these routes are in your entry point file (app.js). We want to move the contact routes to their own file for better organization.
 
-1.  Create a new JavaScript File called "contactRoute.js"
+1.  Create a new JavaScript File called "contactRoute.js".
+    You can technically make this file anywhere you wish in your project but we suggest follow this [project structure](link).
     
 2.  Require Express into contactRoute.js and create a new instance of the Router class by storing it to a new variable (`router`).
 ```js
-let express = require('express');
-let router = express.Router();
+const express = require('express'); // (1)
+const router = express.Router(); // (2)
 ```
+(1) Import the Express module so we can access its properties
+(2) Make a new instance of the built-in Router class that will hold the routes we assign to it.
     
-3.  Cut and paste the two contact routes into contactRoute.js
+3.  Cut and paste the two contact routes from app.js into the contactRoute.js file.
 ```js
-let express = require('express');
-let router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-app.get('/contact', function(req, res) {
+app.get('/contact', (req, res) => {
   res.sendFile('contact.html');
 });
 
 app.post('/contact', function(req, res) {
   const email = req.body.email;
   const message = req.body.message;
-  // insert code to do whateever you want with the form data
+  // code to process the form data
   res.redirect('confirmation.html');
 });
 ```
 
 4.  Change `app` to `router` so that the routes are now associated to this router instance.  
-    We can also remove 'contact' from our path as we will no longer need it.
+    We can remove 'contact' from our path now as we will be setting the 'contact' path in our entry file.
 ```js
-let express = require('express');
-let router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 router.get('/', function(req, res) {
   res.sendFile('contact.html');
@@ -139,15 +190,16 @@ router.get('/', function(req, res) {
 router.post('/', function(req, res) {
   const email = req.body.email;
   const message = req.body.message;
-  // insert code to do whateever you want with the form data
-  res.redirect('confirmation.html');
+  // code to process the form data
+  res.redirect('/confirmation');
 });
 ```
 
 5.  Add an export to the end of the file so we can access this router and its associated routes from other files.
 ```js
-let express = require('express');
-let router = express.Router();
+const express = require('express');
+const router = express.Router();
+const port = 3000;
 
 router.get('/contact', function(req, res) {
   res.sendFile('contact.html');
@@ -156,39 +208,67 @@ router.get('/contact', function(req, res) {
 router.post('/contact', function(req, res) {
   const email = req.body.email;
   const message = req.body.message;
-  // insert code to do whateever you want with the form data
+  // code to process the form data
   res.redirect('confirmation.html');
 });
 
-module.exports = router;
+module.exports = router; // (1)
 ```
+(1) Your routes have been set to this variable so we only have to export the `router` and not the individual routes.
 
 6.  Import the contact router into our entry point file (app.js).
 ```js
-let express = require('express');
-let router = express.Router();
+const express = require('express');
+const router = express.Router();
+const port = 3000;
 
-let contactRoute = require('contactRoute');
+const contactRoute = require('contactRoute'); // (1)
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 ```
+(1) Make sure you are requiring your router from wherever you have placed your contactRoute.js in your project.
 
 7.  Use `app.use()` to load the router into the Express app.  
     Paths that start with `/contact` will now be sent to "contactRoute.js" for further routing.
 ```js
-let express = require('express');
-let router = express.Router();
+const express = require('express');
+const router = express.Router();
+const port = 3000;
 
-let contactRoute = require('contactRoute');
+const contactRoute = require('contactRoute');
 
-app.use('/contact', contactRoute);
+app.use('/contact', contactRoute); // (1)
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 ```
+(1) `app.use()` tells Express what functions you want to associate with the path in the first parameter.
+
+!!! success
+    You can have many router files in your project that you can import into the entry point. This will keep your files a mangeable size for readability.  
+    ```js
+    const express = require('express');
+    const router = express.Router();
+    const port = 3000;
+
+    const indexRoute = require('indexRoute');
+    const contactRoute = require('contactRoute');
+    const authRoute = require('authRoute');
+    const reviewsRoute = require('reviewsRoute');
+
+    app.use('/', indexRoute);
+    app.use('/contact', contactRoute);
+    app.use('/auth', authRoute);
+    app.use('/reviews', reviewsRoute); // (1)
+
+    app.listen(port, () => {
+      console.log(`Example app listening at http://localhost:${port}`)
+    })
+    ```
+    (1) The `reviews/add` and `reviews/delete` paths now exist in a reviewRoute.js file as `/add` and `/delete`.
 
 ## Conclusion
 By the end of this section, you will have successfully learned the following:
@@ -199,5 +279,5 @@ By the end of this section, you will have successfully learned the following:
 
 Great job 🤗. You can go ahead and click on the link below to move on to the next step:
 
-**[Using Middlewares]()**
+**[Using Middleware]()**
 [^1]: [HTTP Request Methods](https://www.w3schools.com/tags/ref_httpmethods.asp).
