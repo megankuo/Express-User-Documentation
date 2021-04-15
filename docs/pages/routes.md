@@ -279,5 +279,5 @@ By the end of this section, you will have successfully learned the following:
 
 Great job 🤗. You can go ahead and click on the link below to move on to the next step:
 
-**[Using Middleware]()**
+**[Using Middleware](/pages/middleware)**
 [^1]: [HTTP Request Methods](https://www.w3schools.com/tags/ref_httpmethods.asp).
