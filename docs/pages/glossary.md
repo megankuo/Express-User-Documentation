@@ -1,4 +1,5 @@
 
+- Endpoint:
 - IDE:
 - Dependency
 - Peer Dependency: 
@@ -6,3 +7,4 @@
 - Linter: tools that perform static analysis on software in order to recognize and report adherence/non-adherence to some set of coding best practice.
 - ESLint
 - Prettier
+- Server

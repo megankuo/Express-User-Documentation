@@ -9,61 +9,69 @@ In this section, we will walk you through how to set up your first **routes** fo
 
 **Routing** is the action of determining what information is display or what action is taken when a user navigates or triggers a specified **endpoint** or **path**.
 
-A simple route is comprised of the following components
+A simple route comprises the following components
  
--   `app`: the instance of Express that you have created in [Getting Started](link)
+-   `app` : the instance of Express that you have created in [Getting Started](link)
 -   `method`:  the Express [route method](https://expressjs.com/en/4x/api.html#app.METHOD) corresponding to HTTP requests (eg. `get`, `post`, or `put`)
 -   `path`: the defined endpoint of the request
 -   `handler`: the function that is called when the route is hit
-```javascript
-app.method(path, handler)
-```
+
+    
+
 !!! Info "Handler functions"
     The handler will often be an [anonymous function](https://www.javascripttutorial.net/javascript-anonymous-functions/) written as either a regular function or an [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions). You may see more than one handler function per route in more complex routes.
 
 ## Setting up routes
-We will cover the 2 most generic route methods: `get` and `post`. 
+We will cover the 2 most generic route methods: `GET` and `POST`. 
 !!! Info "GET & POST"
-    The GET method is used to request data from a server.  
-    The POST method is used to send data to create date or update data on a server. [^1]
+    The `GET` method is used to request data from a server.  
+    The `POST` method is used to send data to create date or update data on a server. [^1]
 
-We left off in Getting Started with one route already set up to the root directory (`'/'`). The handler for this route is an anonymous function that takes in two parameters. The first parameter represents the HTTP request object (often written as `request` or `req`) and the second parameter is the response object (written as `response` or `res`).
+We left off in Getting Started with one route already set up to the root directory (`'/'`). 
+The handler for this route is an anonymous function that takes in two parameters. 
+The first parameter represents the HTTP request object (often written as `request` or `req`) and the second parameter is the response object (written as `response` or `res`).
 
 A response method is called in the handler to terminate the request-response cycle.
-``` { .js .annotate hl_lines="5 6 7" }
-const express = require('express')
-const app = express()
-const port = 3000
+
+``` { .js .annotate hl_lines="5 6 7"}
+const express = require('express');
+const app = express();
+const port = 3000;
 
 app.get('/', (req, res) => { // (1)
-  res.send('Hello World!') // (2)
-})
+  res.send('Hello World!'); // (2)
+});
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+  console.log(`Example app listening at http://localhost:${port}`);
+});
 ```
+
 1. `'/'` (forward slash) is your root directory.
 2. `res.send()` can send back various types of content.
 
-### Returning a static webpage using GET 
+
+
+### Returning a Static Webpage Using GET 
 As an example, let's create a route to display a contact page in the form of a static HTML page.
 
-1.  Start with the route method and insert the path  
-    `app.get('/contact')`
+1.  Start with the route method and insert the path:  
+    `app.get('/contact');`
     
 2.  Insert an empty handler that has the parameters for the request and response objects  
-    `app.get('/contact', (req, res) => { })`
+    `app.get('/contact', (req, res) => { });`
 
-3.  Insert the action you want to perform into the handler function.  
+3.  Insert the action you want to perform into the handler function:
+
     ``` { .js .annotate hl_lines="2"}
     app.get('/contact', (req, res) => {
       res.sendFile('contact.html'); // (1)
     });
     ```
+    
     1. Use `res.sendFile()` to serve a static HTML page.
 
-### Sending data using POST 
+### Sending Data Using POST 
 Suppose you have a form on your contact page for users to submit a message. You would use a POST request so that you can retrieve the submitted data and store it somewhere.
 
 For example, we will use the following form.
@@ -74,19 +82,20 @@ For example, we will use the following form.
   <input type="submit">
 </form>
 ```
-!!! warning "Action & name attributes"
+!!! warning "Action & Name Attributes"
     The action attribute must match the path that will match the route path where we insert the handler logic.  
     The name attribute for each input will become the key/property of the object that the form will send to your server.
 
 
 1.  Start with the route method and insert the path  
     Note that you can use the same path with different methods to perform different actions
-    `app.post('/contact')`
+    `app.post('/contact');`
     
 2.  Insert an empty handler that has the parameters for the request and response objects  
-    `app.post('/contact', (req, res) => { })`
+    `app.post('/contact', (req, res) => { });`
 
-3.  Insert the action you want to perform into the handler function.  
+3.  Insert the action you want to perform into the handler function.
+    
     ``` { .js .annotate hl_lines="2 3 4 5"}
     app.post('/contact', (req, res) => {
       const email = req.body.email; // (1)
@@ -95,12 +104,15 @@ For example, we will use the following form.
       res.redirect('/confirmation'); // (2)
     });
     ```
+    
     1. `req.body` it the object containing the input names and values from the form that was posted.
     2. Use `res.redirect()` to redirect your user to another page/route to end your handler function.
 
+
 !!! success
-    At this point, you have the tools to set up many different routes in your entry point file. Next we will cover how to refactor your routes so the entry file is more manageable.  
-    ``` { .js .annotate }
+    At this point, you have the tools to set up many routes in your entry point file. Next we will cover how to refactor your routes so the entry file is more manageable.
+
+    ``` { .js .annotate}
     const express = require('express');
     const router = express.Router();
     const port = 3000;
@@ -127,19 +139,21 @@ For example, we will use the following form.
     app.get('/reviews/add', (req, res) => { // (1)
       // code to add a review
       res.redirect('/reviews');
-    })
+    });
 
     app.get('/reviews/delete', (req, res) => {
       // code to delete a review
       res.redirect('/reviews');
-    })
+    });
 
 
     app.listen(port, () => {
       console.log(`Example app listening at http://localhost:${port}`)
-    })
+    });
     ```
+    
     1. Note that you can use multi-level paths as well.
+
 
 ## Setting up routers
 As the scope of your project grows or scales, you may find the need to organize your routes for ease of maintenance. Express provides a tool to help achieve this called a **Router**.
@@ -149,18 +163,21 @@ If you had several related endpoints, it would be more manageable to organize th
 ### Router Example
 We will add onto our previous example with the contact page routes. At the moment, these routes are in your entry point file (app.js). We want to move the contact routes to their own file for better organization.
 
-1.  Create a new JavaScript File called "contactRoute.js".
-    You can technically make this file anywhere you wish in your project but we suggest follow this [project structure](link).
+1.  Create a new JavaScript File called `contactRoute.js`.
+    You can technically make this file anywhere you wish in your project but we suggest follow this [project structure](/pages/possible-project-structure).
     
-2.  Require Express into contactRoute.js and create a new instance of the Router class by storing it to a new variable (`router`).
+2.  Require Express into `contactRoute.js` and create a new instance of the Router class by storing it to a new variable (`router`).
+
     ``` { .js .annotate hl_lines="6"}
     const express = require('express'); // (1)
     const router = express.Router(); // (2)
     ```
+    
     1. Import the Express module so we can access its properties
     2. Make a new instance of the built-in Router class that will hold the routes we assign to it.
     
-3.  Cut and paste the two contact routes from app.js into the contactRoute.js file.
+
+3.  Cut and paste the two contact routes from `app.js` into the `contactRoute.js` file.
     ``` { .js .annotate }
     const express = require('express');
     const router = express.Router();
@@ -196,6 +213,7 @@ We will add onto our previous example with the contact page routes. At the momen
     ```
 
 5.  Add an export to the end of the file so we can access this router and its associated routes from other files.
+
     ``` { .js .annotate hl_lines="16"}
     const express = require('express');
     const router = express.Router();
@@ -214,10 +232,13 @@ We will add onto our previous example with the contact page routes. At the momen
 
     module.exports = router; // (1)
     ```
+
     1. Your routes have been set to this variable so we only have to export the `router` and not the individual routes.
 
-6.  Import the contact router into our entry point file (app.js).
-    ```{ .js .annotate hl_lines="5"}
+
+6.  Import the contact router into our entry point file (`app.js`).
+
+    ``` { .js .annotate hl_lines="5"}
     const express = require('express');
     const router = express.Router();
     const port = 3000;
@@ -226,12 +247,15 @@ We will add onto our previous example with the contact page routes. At the momen
 
     app.listen(port, () => {
       console.log(`Example app listening at http://localhost:${port}`)
-    })
+    });
     ```
-    1. Make sure you are requiring your router from wherever you have placed your contactRoute.js in your project.
+
+    1. Make sure you are requiring your router from wherever you have placed your `contactRoute.js` in your project.
+
 
 7.  Use `app.use()` to load the router into the Express app.  
-    Paths that start with `/contact` will now be sent to "contactRoute.js" for further routing.
+    Paths that start with `/contact` will now be sent to `contactRoute.js` for further routing.
+
     ``` { .js .annotate hl_lines="7"}
     const express = require('express');
     const router = express.Router();
@@ -243,22 +267,27 @@ We will add onto our previous example with the contact page routes. At the momen
 
     app.listen(port, () => {
       console.log(`Example app listening at http://localhost:${port}`)
-    })
+    });
     ```
+
     1. `app.use()` tells Express what functions you want to associate with the path in the first parameter.
+
 
 !!! success
     You can have many router files in your project that you can import into the entry point. This will keep your files a mangeable size for readability.  
+
     ``` { .js .annotate }
     const express = require('express');
     const router = express.Router();
     const port = 3000;
 
+    // Routes
     const indexRoute = require('indexRoute');
     const contactRoute = require('contactRoute');
     const authRoute = require('authRoute');
     const reviewsRoute = require('reviewsRoute');
 
+    // Route Matchers
     app.use('/', indexRoute);
     app.use('/contact', contactRoute);
     app.use('/auth', authRoute);
@@ -268,7 +297,8 @@ We will add onto our previous example with the contact page routes. At the momen
       console.log(`Example app listening at http://localhost:${port}`)
     })
     ```
-    1. The `reviews/add` and `reviews/delete` paths now exist in a reviewRoute.js file as `/add` and `/delete`.
+
+    1. The `reviews/add` and `reviews/delete` paths now exist in a `reviewRoute.js` file as `/add` and `/delete`.
 
 ## Conclusion
 By the end of this section, you will have successfully learned the following:
