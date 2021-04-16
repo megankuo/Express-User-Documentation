@@ -1,10 +1,27 @@
-
-- Endpoint:
-- IDE:
-- Dependency
-- Peer Dependency: 
-- Code Style Guide:
-- Linter: tools that perform static analysis on software in order to recognize and report adherence/non-adherence to some set of coding best practice.
-- ESLint
-- Prettier
-- Server
+| Term                                 | Definition |
+|--------------------------------------|------------|
+| Backend                              |            |
+| Code consistency                     |            |
+| Code style guide                     |            |
+| Command line interface (CLI)         |            |
+| CommonJS                             |            |
+| Dependency                           |            |
+| Development stack                    |            |
+| ECMAScript 2015 / ECMAScript 6 (ES6) |            |
+| Endpoint                             |            |
+| Entry point                          |            |
+| ESLint                               |            |
+| HTTP request & response              |            |
+| IDE                                  |            |
+| Linter                               |            |
+| Localhost                            |            |
+| MEAN                                 |            |
+| Packages                             |            |
+| Path                                 |            |
+| Prettier                             |            |
+| RESTful API                          |            |
+| Router                               |            |
+| Routing                              |            |
+| Route                                |            |
+| Runtime environment                  |            |
+| Server                               |            |
