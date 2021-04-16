@@ -2,7 +2,7 @@
 When working on a project, it is important to have a clear project structure. Although the importance of having a project structure may seem insignificant when working on a small project, programmers and engineers will often collaborate with each other to write thousands of lines of code. It would be pure chaos if there was no defined project structure to keep all of your code organized. On top of this, troubleshooting issues and implementing new features would be a nightmare.
 
 !!! Info "Model-view-Controller (MVC)"
-    An MVC is a sotware design pattern that is used to divide all related program logic into three core logical components called the **Model**, **View**, and **Controller**.
+    An MVC is a software design pattern that is used to divide all related program logic into three core logical components called the **Model**, **View**, and **Controller**.
     The Controller is used to control what View is displayed while using the Model to provide data for the View to render.
 
 ## Current Folder Structure
@@ -22,9 +22,8 @@ In the introduction section, you will have created a new project folder with the
 
 In this section you will create a subfolder. Folders that are created inside of the root folder (also known as *root directory* or *root*) of your project are called subfolders. Subfolders can also contain their own subfolders and so forth. It is recommended that you do not use more than three or four levels to keep your project organized.
 
-1. Type the command below in the Terminal to create a docs folder.
-
-> mkdir src
+1. Create a `docs` folder to hold any documentation you hvae:
+> mkdir docs
 
 
     If successful, you will see a new folder inside of your project folder in the Explorer Tab in VSC. The file will resemble the example below.
@@ -48,9 +47,7 @@ After you have created your first subfolder in the project, we will be creating 
 
 2. Type each line of the commands below to create all of the nested subfolders that you will need.
    > mkdir api, config, db, models, services, utils, mkdir, views
-   
    OR
-   
    > mkdir api config db models services util mkdir views
 
     Once you have created all of the folders then you will see the folder structure from the example below.

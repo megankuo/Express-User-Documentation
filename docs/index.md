@@ -38,16 +38,17 @@ Before proceeding, ensure you have the following installed:
 
 The main sections of the documentation are summarized below:
 
-- **[Elaboration on Project Structure]()**
-- **[Configuring Project for Collaboration]()**
-- **[Installing Express.js](express-getting-started.md)**
-- **[Adding Routes]()**
-- **[Middleware]()**
+- **[Elaboration on Project Structure](pages/project-structure)**
+- **[Configuring Project for Collaboration](pages/configuration.md)**
+- **[Installing Express.js](pages/express-getting-started.md)**
+- **[Adding Routes](pages/routes.md)**
+- **[Middleware](pages/middleware.md)**
 
 
 ## Typographical Conventions
 1. Some code snippets may have clickable numbers that can be useful 
-if you do not understand what a specific piece of code does. See an example of this below.
+if you do not understand what a specific piece of code does. 
+   See an example of this below:
 
     ``` { .js .annotate }
     const sum = (numbers) => {
@@ -56,11 +57,22 @@ if you do not understand what a specific piece of code does. See an example of t
     ```
     
     1. Return the sum of the numbers in the list.
+    
+2. Changes to a previously created files will be highlighted in yellow:
 
-2. File names and npm packages will be formatted like: `somefile.js`.
+    ``` { .js .annotate hl_lines="2"}
+    const sum = (numbers) => {
+        const multiplier = 2;
+        return numbers.reduce((a, b) => multiplier * (a + b), 0);
+    };
+    ```
+   
+3. File names and npm packages will be formatted like: `somefile.js`.
 
-3. Instructions that require you to run a command in terminal will be formatted like:
+4. Instructions that require you to run a command in terminal will be formatted like:
 > run some command in the terminal
+
+
 
 ## Notes and Warning Messages
 
