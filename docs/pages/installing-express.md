@@ -58,10 +58,11 @@ In the introduction, you will have created a new project folder with all of the 
       });
       
       ```
+
       1. Import instance of Express Application created in `src/app.js`.
       2. Specify port number for server to listen on.
       3. Start server and listen on specified port.
-   
+
 ## Start Express Server
 
 In this last section, you will learn how to run your Express server on your **localhost**. You will be able to see the string "Hello World" from earlier in your internet browser by visiting your localhost:3000.

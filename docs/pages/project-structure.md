@@ -1,12 +1,10 @@
-# Project Structure
+## Overview
 
 When working on a project, it is important to have a clear project structure. Although the importance of having a project structure may seem insignificant when working on a small project, programmers and engineers will often collaborate with each other to write thousands of lines of code. It would be pure chaos if there was no defined project structure to keep all of your code organized. On top of this, troubleshooting issues and implementing new features would be a nightmare.
 
 !!! Info "Model-view-Controller (MVC)"
     An MVC is a sotware design pattern that is used to divide all related program logic into three core logical components called the **Model**, **View**, and **Controller**.
     The Controller is used to control what View is displayed while using the Model to provide data for the View to render.
-
-## Overview
 
 In this guide we will be using this project structure to guide you towards creating a small to medium sized project. As your project grows larger, you will want to modify and personalize your project as you find is necessary.
 
