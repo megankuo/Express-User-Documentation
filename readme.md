@@ -39,6 +39,10 @@ All three members of the group used VS Code to write our markdown files. We prev
 
 We loosely used the [Google Developer Documentation Style Guide](https://developers.google.com/style) to give our writing uniformity. We had previous used this style guide and its clear documentation made it an attractive style guide to reference.
 
+We used codeblocks to represent code. MkDocs allowed us to make annotations inside the codeblock that show additional information when clicked. This allowed us to explain specific lines of code without disrupting the visual flow. MkDocs also had the feature to highlight lines of code. We used this feature to highlight new additions or changes to a repeating codeblock. 
+
+We used a quoteblock to visually differentiate Terminal commands from code.
+
 ### Learning Best Practices For Web Writing
 
 In addition to user guides, developers also write documentation for their peers and company stakeholders. Most of this writing exists in a web format. As such it is important to construct documents that maximize readibility on the web.
@@ -100,11 +104,6 @@ This documentation is intended for the following users who are searching for a c
 - Software development teams working on small or medium-sized web applications.
 
 Therefore, we chose to write in a casual tone as if we were explaining to a peer. We kept the jargon to a minimal as we did not want to confuse any beginner coders. Any specialized terminology included a hyperlink to an external resource if the reader needed further explanation. 
-
-
-
-  
-
 
 ## Conclusion
 > write conclusion...
