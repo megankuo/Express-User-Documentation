@@ -125,8 +125,11 @@ Before we create more subfolders, make sure you navigate back to the root direct
    > cd public
 
 3. Type each line of the commands below to create all of the nested subfolders that you will inside of your public folder.
+
     > mkdir images
+
     > mkdir js
+
     > mkdir styles
 
     If successful your folder structure will resemble the example below:
