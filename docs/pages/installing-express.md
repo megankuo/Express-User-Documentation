@@ -1,4 +1,4 @@
-# Overview
+## Overview
 
 This section will focus on helping you set up an [**Express.js**](https://expressjs.com/) (or informally known as *Express*).
 It is a web application framework for [**Node.js**](https://nodejs.org/) that is free and open-source. 

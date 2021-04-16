@@ -23,10 +23,3 @@
 | **Route** | The path used in the URL to access endpoints. |
 | **Runtime environment** | The environment where a program is executed. |
 | **Server** |  A computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network.  |
-
-
-| Method      | Description                          |
-| ----------- | ------------------------------------ |
-| `GET`       | :material-check:     Fetch resource  |
-| `PUT`       | :material-check-all: Update resource |
-| `DELETE`    | :material-close:     Delete resource |
