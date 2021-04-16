@@ -20,6 +20,7 @@ This documentation is targeted towards the following users:
 The documentation assumes the following:
 
 - Working knowledge of JavaScript([ES6](https://262.ecma-international.org/6.0/)), HTML, CSS - you are expected to know how to write basic HTML and CSS to make a simple static website.
+- Ability to use the terminal to run simple commands. 
 - Working knowledge of Node.js - you should be familiar with using a package manager such as [`npm`](https://www.npmjs.com/) or [`yarn`](https://yarnpkg.com/) to install Node.js packages or modules.
 
 ## Software Requirements
@@ -45,18 +46,21 @@ The main sections of the documentation are summarized below:
 
 
 ## Typographical Conventions
-MORE CONTENT HERE
-
-Some code snippets may have clickable numbers that can be useful 
+1. Some code snippets may have clickable numbers that can be useful 
 if you do not understand what a specific piece of code does. See an example of this below.
 
-``` { .js .annotate }
-const sum = (numbers) => {
-    return numbers.reduce((a, b) => a + b, 0); // (1)
-};
-```
+    ``` { .js .annotate }
+    const sum = (numbers) => {
+        return numbers.reduce((a, b) => a + b, 0); // (1)
+    };
+    ```
+    
+    1. Return the sum of the numbers in the list.
 
-1. Return the sum of the numbers in the list.
+2. File names and npm packages will be formatted like: `somefile.js`.
+
+3. Instructions that require you to run a command in terminal will be formatted like:
+> run some command in the terminal
 
 ## Notes and Warning Messages
 
