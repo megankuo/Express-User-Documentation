@@ -26,7 +26,7 @@ We will cover the 2 most generic route methods: `GET` and `POST`.
     The `GET` method is used to request data from a server.  
     The `POST` method is used to send data to create date or update data on a server. [^1]
 
-We left off in [Installing Express](/pages/installing-express/) with one route already set up to the root directory (`'/'`) from `src/app.js`. 
+We left off in [Installing Express](../pages/installing-express/) with one route already set up to the root directory (`'/'`) from `src/app.js`. 
 The handler for this route is an anonymous function that takes in two parameters. 
 The first parameter represents the HTTP request object (often written as `request` or `req`) and the second parameter is the response object (written as `response` or `res`).
 
@@ -301,5 +301,5 @@ By the end of this section, you will have successfully learned the following:
 
 Great job 🤗. You can go ahead and click on the link below to move on to the next step:
 
-**[Using Middleware](pages/middleware)**
+**[Using Middleware](../pages/middleware)**
 [^1]: [HTTP Request Methods](https://www.w3schools.com/tags/ref_httpmethods.asp).
