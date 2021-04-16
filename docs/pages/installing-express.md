@@ -90,15 +90,11 @@ First, we'll install express and any dependencies, and then walk you through how
 
 !!!success
     
-    ![Placeholder](https://dummyimage.com/400x200/eee/aaa){ align=left }
     Once the page loads, you should see "Hello World!" in your browser.
     This means that you have successfully installed and created your first working server!
 
+[comment]: <> (    ![Express Success]&#40;images/installing-express-step3b.png&#41;{ align=left })
 
-
-![Placeholder](https://dummyimage.com/600x400/eee/aaa){ align=center }
-
-![Example of the browser displaying the words "Hello World!"](images/installing-express-step14.png)
 
 ## Conclusion
 
