@@ -52,40 +52,40 @@ We ensured that every procedure page had an overview that would give the reader 
 We used MkDoc's admonitions to highlight any information we wanted to stand out to the reader. 
 
 <figure>
+  <figcaption>Specifies actions that may cause an error or will cause the application to crash.</figcaption>
   <img
   src="docs/pages/images/admonitions/danger.png"
   alt="The danger admonition.">
-  <figcaption>Specifies actions that may cause an error or will cause the application to crash.</figcaption>
 </figure>
 <figure>
+  <figcaption>Specifies actions that may lead to unexpected behaviour.</figcaption>
   <img
   src="docs/pages/images/admonitions/failure.png"
   alt="The failure admonition.">
-  <figcaption>Specifies actions that may lead to unexpected behaviour.</figcaption>
 </figure>
 <figure>
+  <figcaption>Specifies actions that may cause an error.</figcaption>
   <img
   src="docs/pages/images/admonitions/bug.png"
   alt="The bug admonition.">
-  <figcaption>Specifies actions that may cause an error.</figcaption>
 </figure>
 <figure>
+  <figcaption>Specifies content that must be read before proceeding.</figcaption>
   <img
   src="docs/pages/images/admonitions/warning.png"
   alt="The warning admonition.">
-  <figcaption>Specifies content that must be read before proceeding.</figcaption>
 </figure>
 <figure>
+  <figcaption>Indicates additional information or tips.</figcaption>
   <img
   src="docs/pages/images/admonitions/info.png"
   alt="The info admonition.">
-  <figcaption>Indicates additional information or tips.</figcaption>
 </figure>
 <figure>
+  <figcaption>Indicates what success looks like.</figcaption>
   <img
   src="docs/pages/images/admonitions/success.png"
   alt="The success admonition.">
-  <figcaption>Indicates what success looks like.</figcaption>
 </figure>
 
 #### Chunking
