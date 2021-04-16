@@ -11,12 +11,12 @@ When working on a project, it is important to have a clear project structure. Al
 In the introduction section, you will have created a new project folder with the following folders and files structure:
 
 ```bash
-|-- project-name              # Root Directory
-    |-- node_modules/         # Downloaded Libraries
-    |-- .eslintrc.js          # Linting Rules 
-    |-- .prettierrc.js        # Code Formatting Rules
-    |-- package.json          # Metadata and Package List
-    |-- package-lock.json     # Version Number for Dependencies
+    |-- project-name              # Root Directory
+        |-- node_modules/         # Downloaded Libraries
+        |-- .eslintrc.js          # Linting Rules 
+        |-- .prettierrc.js        # Code Formatting Rules
+        |-- package.json          # Metadata and Package List
+        |-- package-lock.json     # Version Number for Dependencies
 ```
 
 ## Create a Subfolder
@@ -24,9 +24,9 @@ In the introduction section, you will have created a new project folder with the
 In this section you will create a subfolder. Folders that are created inside of the root folder (also known as *root directory* or *root*) of your project are called subfolders. Subfolders can also contain their own subfolders and so forth. It is recommended that you do not use more than three or four levels to keep your project organized.
 
 1. Type the command below in the Terminal to create a docs folder.
-   > mkdir src
+    > mkdir src
 
-   If successful, you will see a new folder inside of your project folder in the Explorer Tab in VSC. The file will resemble the example below.
+    If successful, you will see a new folder inside of your project folder in the Explorer Tab in VSC. The file will resemble the example below.
 
     ```bash
     |-- project-name
@@ -159,12 +159,15 @@ Before we create more subfolders, make sure you navigate back to the root direct
     ```
 
     !!! Success
-    You will see the Terminal begin to download Express. Once successful, you will see a new folder called node_modules and a file called package-lock.json in the Explorer tab of your project.
+        You will see the Terminal begin to download Express. Once successful, you will see a new folder called node_modules and a file called package-lock.json in the Explorer tab of your project.
 
-    ![Example of successfully creating all subfolders and nested subfolders](images/project-structure.png)
+
+
+
+        ![Example of successfully creating all subfolders and nested subfolders](images/project-structure.png)
 
     !!! Info "Test Subfolder Recommendation"
-    Another folder that we recommend creating is a test subfolder. As your projects get bigger, you will find that testing your applications will make it easier to maintain your code. Although it is not always necessary for smaller projects, it is considered good practice to use test suites to test your application.
+        Another folder that we recommend creating is a test subfolder. As your projects get bigger, you will find that testing your applications will make it easier to maintain your code. Although it is not always necessary for smaller projects, it is considered good practice to use test suites to test your application.
 
 ## Conclusion
 
@@ -177,4 +180,4 @@ By the end of this section, you will have successfully learned the following:
 
 Congratulations! 🎉 You can go ahead and click on the link below to learn more about how to configure your project:
 
-**[Configuration](/pages/config)**
+**[Configuration](/pages/configuration)**
