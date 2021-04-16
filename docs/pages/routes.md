@@ -101,6 +101,7 @@ For this example, we will pretend that the server is receiving data from the fol
     ```
 
 3.  Insert the action you want to perform into the handler function.
+
     ``` { .js .annotate hl_lines="2 3 4 5"}
     app.post('/contact', (req, res) => {
       const email = req.body.email; // (1)
@@ -110,7 +111,7 @@ For this example, we will pretend that the server is receiving data from the fol
     });
     ```
     
-    1. `req.body` it the object containing the input names and values from the form that was posted.
+    1. req.body` it the object containing the input names and values from the form that was posted.
     2. Use `res.redirect()` to redirect your user to another page/route to end your handler function.
 
 

@@ -20,6 +20,7 @@ This documentation is targeted towards the following users:
 The documentation assumes the following:
 
 - Working knowledge of JavaScript([ES6](https://262.ecma-international.org/6.0/)), HTML, CSS - you are expected to know how to write basic HTML and CSS to make a simple static website.
+- Ability to use the terminal to run simple commands. 
 - Working knowledge of Node.js - you should be familiar with using a package manager such as [`npm`](https://www.npmjs.com/) or [`yarn`](https://yarnpkg.com/) to install Node.js packages or modules.
 
 ## Software Requirements
@@ -37,26 +38,41 @@ Before proceeding, ensure you have the following installed:
 
 The main sections of the documentation are summarized below:
 
-- **[Elaboration on Project Structure]()**
-- **[Configuring Project for Collaboration]()**
-- **[Installing Express.js](express-getting-started.md)**
-- **[Adding Routes]()**
-- **[Middleware]()**
+- **[Elaboration on Project Structure](pages/project-structure)**
+- **[Configuring Project for Collaboration](pages/configuration.md)**
+- **[Installing Express.js](pages/express-getting-started.md)**
+- **[Adding Routes](pages/routes.md)**
+- **[Middleware](pages/middleware.md)**
 
 
 ## Typographical Conventions
-MORE CONTENT HERE
+1. Some code snippets may have clickable numbers that can be useful 
+if you do not understand what a specific piece of code does. 
+   See an example of this below:
 
-Some code snippets may have clickable numbers that can be useful 
-if you do not understand what a specific piece of code does. See an example of this below.
+    ``` { .js .annotate }
+    const sum = (numbers) => {
+        return numbers.reduce((a, b) => a + b, 0); // (1)
+    };
+    ```
+    
+    1. Return the sum of the numbers in the list.
+    
+2. Changes to a previously created files will be highlighted in yellow:
 
-``` { .js .annotate }
-const sum = (numbers) => {
-    return numbers.reduce((a, b) => a + b, 0); // (1)
-};
-```
+    ``` { .js .annotate hl_lines="2"}
+    const sum = (numbers) => {
+        const multiplier = 2;
+        return numbers.reduce((a, b) => multiplier * (a + b), 0);
+    };
+    ```
+   
+3. File names and npm packages will be formatted like: `somefile.js`.
 
-1. Return the sum of the numbers in the list.
+4. Instructions that require you to run a command in terminal will be formatted like:
+> run some command in the terminal
+
+
 
 ## Notes and Warning Messages
 
