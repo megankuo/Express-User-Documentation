@@ -103,6 +103,6 @@ By the end of this section, you will have successfully learned the following:
 
 Great job 🤗. Check out the next page if you've had any issues getting the project to work:
 
-**[Troubleshooting](/pages/troubleshooting)**
+**[Troubleshooting](pages/troubleshooting)**
 
 

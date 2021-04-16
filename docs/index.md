@@ -40,7 +40,7 @@ The main sections of the documentation are summarized below:
 
 - **[Elaboration on Project Structure](pages/project-structure)**
 - **[Configuring Project for Collaboration](pages/configuration)**
-- **[Installing Express.js](pages/install-express)**
+- **[Installing Express.js](pages/installing-express)**
 - **[Adding Routes](pages/routes)**
 - **[Middleware](pages/middleware)**
 

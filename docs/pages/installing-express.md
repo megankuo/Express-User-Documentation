@@ -102,4 +102,4 @@ By the end of this section, you will have successfully learned the following:
 
 Great job 🤗. You can go ahead and click on the link below to move on to the next step:
 
-**[Adding Routes](/pages/routes)**
+**[Adding Routes](pages/routes)**

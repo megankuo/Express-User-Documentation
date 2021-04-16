@@ -96,4 +96,4 @@ By the end of this section, you will have successfully learned the following:
 
 Congratulations! 🎉 You can go ahead and click on the link below to learn more about how to configure your project:
 
-**[Configuration](/pages/configuration)**
+**[Configuration](pages/configuration)**
