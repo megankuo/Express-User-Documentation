@@ -6,9 +6,9 @@
 | **Code style guide**  | An opinionated guide of coding conventions, style, and best practices meant to ensure code consistency within a project. Can also be referred to as coding guidelines, coding standards, or coding conventions. |
 | **Dependency** | Additional code required for the current application to run. |
 | **Development stack** | The set of languages, libraries, IDEs and tools (including OS, database server and application server) used for application development.          |
-| **ES6** | ES6 stands for ECMAScript 6, otherwise knowns as ECMAScript 2015. It is the most recent major version of the stadard for JavaScript.|
 | **Endpoint** |  One end of a communication channel where one system is interacting with another and performs some action. It is function made available through an API  |
 | **Entry point** | The point in a program that contains the function for starting the program. |
+| **ES6** | ES6 stands for ECMAScript 6, otherwise knowns as ECMAScript 2015. It is the most recent major version of the stadard for JavaScript.|
 | **ESLint**   | A popular linter for identifying and reporting problem patters found in ECMAScript or JavaScript code. |
 | **HTTP request & response**  | HTTP stands for Hypertext Transfer Protocol. It is a standard for transferring information from the browser to the server (requests) and data from the server to the browser (responses).|
 | **IDE** | IDE stands for integrated development environment. It is the software used for coding that integrates a text editor with additional tools.
