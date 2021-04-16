@@ -109,12 +109,12 @@ plugins:
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-  - js/tables.js
-  - js/config.js
+  - javascripts/tables.js
+  - javascripts/config.js
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
-  - css/extra.css
+  - stylesheets/extra.css
 
 extra:
   social:

@@ -100,9 +100,8 @@ First, we'll install express and any dependencies, and then walk you through how
 
 By the end of this section, you will have successfully learned the following:
 
-- Used the Terminal to install Express
-- Imported an Express module into your app.js file
-- Created a working Express server on your localhost on port 3009
+- [x] How to install Express
+- [x] How to create a working Express server on your localhost
 
 Great job 🤗. You can go ahead and click on the link below to move on to the next step:
 
