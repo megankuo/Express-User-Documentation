@@ -83,8 +83,11 @@ After you have created your first subfolder in the project, we will be creating 
     > cd api
 
 4. Type each line of the commands below to create all of the nested subfolders that you will need.
+
     > mkdir controllers
+
     > mkdir middleware
+
     > mkdir routes
 
     If successful your folder structure should resemble the folder structure below:
