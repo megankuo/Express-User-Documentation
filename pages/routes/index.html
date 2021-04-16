@@ -544,14 +544,14 @@ The name attribute for each input will become the key/property of the object tha
 </span><span class="p">});</span>
 </code></pre></div>
 <ol>
-<li>req.body` it the object containing the input names and values from the form that was posted.</li>
+<li>req.body` is the object containing the input names and values from the form that was posted.</li>
 <li>Use <code>res.redirect()</code> to redirect your user to another page/route to end your handler function.</li>
 </ol>
 </li>
 </ol>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
-<p>At this point, you have the tools to set up many routes in your <code>app.js. Next we will cover how to refactor your routes so</code>app.js` is more manageable.</p>
+<p>At this point, you have the tools to set up many routes in your <code>src/app.js</code>. Next we will cover how to refactor your routes so <code>src/app.js</code> is more manageable.</p>
 <div class="annotate highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">);</span>
 <span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
 
@@ -592,7 +592,7 @@ The name attribute for each input will become the key/property of the object tha
 </div>
 <h2 id="setting-up-routers">Setting up Routers</h2>
 <p>As the scope of your project grows or scales, you may find the need to organize your routes for ease of maintenance. Express provides a class to help achieve this called a <a href="https://expressjs.com/en/guide/routing.html#express-router"><strong>Router</strong></a>.</p>
-<p>If you had several related endpoints, it would be more manageable to organize these related routes into their own file. The Express router can help you achieve this by allowing you to export this grouping into another file (in our case <code>app.js</code>). This file acts as a main hub directing requests to the appropriate endpoints.</p>
+<p>If you had several related endpoints, it would be more manageable to organize these related routes into their own file. The Express router can help you achieve this by allowing you to export this grouping into another file (in our case <code>src/app.js</code>). This file acts as a main hub directing requests to the appropriate endpoints.</p>
 <h2 id="router-example">Router Example</h2>
 <p>We will add onto our previous example with the contact page routes. At the moment, these routes are in <code>src/app.js</code>. We want to move the contact routes to their own file for better organization.</p>
 <ol>
