@@ -26,12 +26,12 @@ In this section you will create a subfolder. Folders that are created inside of 
 1. Type the command below in the Terminal to create a docs folder.
    > mkdir src
 
-   If successful, you should see a new folder inside of your project folder in the Explorer Tab in VSC like the example below.
+   If successful, you will see a new folder inside of your project folder in the Explorer Tab in VSC. The file will resemble the example below.
 
     ```bash
     |-- project-name
-        |-- src/ # Source (src) Will Contain Working Files
         |-- node_modules/
+        |-- src/ # Source (src) Will Contain Working Files
         |-- .eslintrc.js
         |-- .prettierrc.js
         |-- package.json
@@ -40,30 +40,31 @@ In this section you will create a subfolder. Folders that are created inside of 
 
 ## Create Nested Subfolders
 
-After you have created your first subfolder in the project, we will be creating more folders inside of the src folder. The newly created folders are called nested subfolders.
+After you have created your first subfolder in the project, we will be creating more folders inside of the src folder. The newly created folders are called nested subfolders. The source (src) folder will contain all of the files needed to build your project.
 
 1. Type the command below to move into your src directory.
    > cd src
 
 2. Type each line of the commands below to create all of the nested subfolders that you will need.
-   > mkdir api
+    > mkdir api
 
-   > mkdir config
+    > mkdir config
 
-   > mkdir db
+    > mkdir db
 
-   > mkdir models
+    > mkdir models
 
-   > mkdir services
+    > mkdir services
 
-   > mkdir utils
+    > mkdir utils
 
-   > mkdir views
+    > mkdir views
 
     Once you have created all of the folders then you will see the folder structure from the example below.
 
     ```bash
     |-- project-name              # Root Directory
+        |-- node_modules/
         |-- src/
         |   |-- api/              # Application Programming Interfaces
         |   |-- config/           # Configuration/Settings Files
@@ -72,26 +73,25 @@ After you have created your first subfolder in the project, we will be creating 
         |   |-- services/         # Services Layer for Business Logic (Talks to Database)
         |   |-- utils/            # Miscellaneous Helper Functions
         |   |-- views/            # Static Template Files (EJS, Pug, or Mustache)
-        |-- node_modules/
         |-- .eslintrc.js
         |-- .prettierrc.js
         |-- package.json
         |-- package-lock.json
-        |-- README.md
     ```
 
 3. Type the command below to move into your api directory.
-   > cd api
+    > cd api
 
 4. Type each line of the commands below to create all of the nested subfolders that you will need.
-   > mkdir controllers
-   > mkdir middleware
-   > mkdir routes
+    > mkdir controllers
+    > mkdir middleware
+    > mkdir routes
 
-   If successful your folder structure should resemble the folder structure below:
+    If successful your folder structure should resemble the folder structure below:
 
     ```bash
     |-- project-name
+        |-- node_modules/
         |-- src/
         |   |-- api/
         |   |   |-- controllers/  # Request Managers
@@ -103,13 +103,62 @@ After you have created your first subfolder in the project, we will be creating 
         |   |-- services/
         |   |-- utils/
         |   |-- views/
-        |-- node_modules/
         |-- .eslintrc.js
         |-- .prettierrc.js
         |-- package.json
         |-- package-lock.json
-        |-- README.md
     ```
+
+## Create Subfolders for Front End Code
+
+When creating a web application, it is considered good practice to put all of the front end code into a folder called public. Public folders are used to store web accessible files that handle the visual components of your web application. The public folder is a subfolder in your root directory.
+
+Before we create more subfolders, make sure you navigate back to the root directory in your Terminal.
+
+1. Type the command below to create a public subfolder.
+    > mkdir public
+
+2. Type the command below to move into your public directory.
+   > cd public
+
+3. Type each line of the commands below to create all of the nested subfolders that you will inside of your public folder.
+    > mkdir images
+    > mkdir js
+    > mkdir styles
+
+    If successful your folder structure will resemble the example below:
+
+    ```bash
+    |-- project-name
+        |-- node_modules/
+        |-- public/               # Publicly Accessible Assets
+        |   |-- images/           # Images
+        |   |-- js/               # Client-side JavaScript
+        |   |-- styles/           # CSS Stylesheets   
+        |-- src/
+        |   |-- api/
+        |   |   |-- controllers/
+        |   |   |-- middleware/
+        |   |   |-- routes/
+        |   |-- config/
+        |   |-- db/
+        |   |-- models/
+        |   |-- services/
+        |   |-- utils/
+        |   |-- views/
+        |-- .eslintrc.js
+        |-- .prettierrc.js
+        |-- package.json
+        |-- package-lock.json
+    ```
+
+    !!! Success
+    You will see the Terminal begin to download Express. Once successful, you will see a new folder called node_modules and a file called package-lock.json in the Explorer tab of your project.
+
+    ![Example of successfully creating all subfolders and nested subfolders](images/project-structure.png)
+
+    !!! Info "Test Subfolder Recommendation"
+    Another folder that we recommend creating is a test subfolder. As your projects get bigger, you will find that testing your applications will make it easier to maintain your code. Although it is not always necessary for smaller projects, it is considered good practice to use test suites to test your application.
 
 ## Conclusion
 
