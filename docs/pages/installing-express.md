@@ -9,16 +9,16 @@ Express is used to provide server-side logic for web and mobile applications.
 In the introduction, you will have created a new project folder with all of the subfolders and subfolders required. First, we'll install express and any dependencies, and then walk you through how to create an Express server, so you can serve content to your front-end (browser).
 
 1. Install [`nodemon`](https://github.com/remy/nodemon):
-    > npm install --save-dev nodemon
+> npm install --save-dev nodemon
 
 2. Install Express:
-    > npm install express
+> npm install express
 
 3. Create a `src` folder in the root directory:
-    > mkdir src
+> mkdir src
 
 4. Create an `app.js` file in the `src` directory:
-    > touch src/app.js
+> touch src/app.js
 
 
 5. Open the `app.js` file created above and add the following code:
@@ -43,7 +43,7 @@ In the introduction, you will have created a new project folder with all of the 
    
 
 6. Create an `server.js` file in the root directory:
-    > touch server.js
+> touch server.js
 
 
 7. Open the `server.js` file created above and add the following code:
@@ -86,7 +86,7 @@ In this last section, you will learn how to run your Express server on your **lo
 > npm start
 
 3. Open your internet browser of choice and type in the URL for the Express server:
-    > [localhost:3000](http://localhost:3000)
+> [localhost:3000](http://localhost:3000)
 
     !!!success
         Once the page loads, you should see "Hello World!" in your browser.
