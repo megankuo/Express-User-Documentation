@@ -54,7 +54,7 @@ app.listen(port, () => {
     Remember you can click on the numbers at the end of a line of code for extra information about the specific examples used.
 
 
-### Returning a Static Webpage Using GET 
+## Returning a Static Webpage Using GET 
 As an example, let's create a route to display a contact page in the form of a static HTML page.
 
 1.  Start with the route method and insert the path for your Express server to listen for.
@@ -77,7 +77,7 @@ As an example, let's create a route to display a contact page in the form of a s
     
     1. Use `res.sendFile()` to serve a static HTML page.
 
-### Sending Data Using POST 
+## Sending Data Using POST 
 Suppose you have a form on your contact page for users to submit a message. You would use a [POST request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) so that you can retrieve the submitted data and store it somewhere.
 
 For this example, we will pretend that the server is receiving data from the following form.
@@ -164,12 +164,12 @@ For this example, we will pretend that the server is receiving data from the fol
     1. Note that you can use multi-level paths as well.
 
 
-## Setting up routers
+## Setting up Routers
 As the scope of your project grows or scales, you may find the need to organize your routes for ease of maintenance. Express provides a class to help achieve this called a [**Router**](https://expressjs.com/en/guide/routing.html#express-router).
 
 If you had several related endpoints, it would be more manageable to organize these related routes into their own file. The Express router can help you achieve this by allowing you to export this grouping into your entry point file. The entry point file acts as a main hub to direct requests to the appropriate endpoints.
 
-### Router Example
+## Router Example
 We will add onto our previous example with the contact page routes. At the moment, these routes are in your entry point file (app.js). We want to move the contact routes to their own file for better organization.
 
 1.  Create a new JavaScript File called `contactRoute.js` in the `src/api/routes`.
@@ -312,9 +312,9 @@ We will add onto our previous example with the contact page routes. At the momen
 ## Conclusion
 By the end of this section, you will have successfully learned the following:
 
-- How to write a route to set the desired response to different HTTP requests
-- How to use the Express Router class to group routes
-- How to export and import the router for use in separate file
+- [x] How to write a route to set the desired response to different HTTP requests
+- [x] How to use the Express Router class to group routes
+- [x] How to export and import the router for use in separate file
 
 Great job 🤗. You can go ahead and click on the link below to move on to the next step:
 

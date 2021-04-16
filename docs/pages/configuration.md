@@ -185,9 +185,10 @@ and add a custom rule for illustrative purposes.
 
 By the end of this section, you will have successfully learned the following:
 
-- The benefits of using tools such as ESLint and Prettier.
-- How to install and setup ESLint and Prettier.
-- How to customize ESLint.
+- [x] The benefits of using tools such as ESLint and Prettier.
+- [x] How to install and setup ESLint and Prettier.
+- [x] How to customize ESLint.
+
 
 Great job 🤗. You can go ahead and click on the link below to move on to the next step:
 
