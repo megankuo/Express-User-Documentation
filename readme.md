@@ -1,7 +1,6 @@
 
 # Overview of Express User Documentation
 
-
 Welcome! 👋 This documentation will guide you through setting up a [**Node.js**](https://nodejs.org/) project for building small to medium-scale RESTful APIs using [**Express.js**](https://expressjs.com/).
 
 The goal of this documentation is to provide you with enough information to build your first Express application. We will also focus on best practices and various ways to optimize workflow when working collaboratively.
@@ -37,20 +36,57 @@ This was the first time writing extensively in markdown for two of our three gro
 All three members of the group used VS Code to write our markdown files. We previewed the markdown using VS Code's built-in markdown preview but we had to serve our guide with MkDocs to see the accurate rendering of our styles.
 
 ### Using a Style Guide
-We used the [Google Developer Documentation Style Guide](https://developers.google.com/style) to give our writing uniformity. We had previous used this style guide and its clear documentation made it an attractive style guide to reference.
+
+We loosely used the [Google Developer Documentation Style Guide](https://developers.google.com/style) to give our writing uniformity. We had previous used this style guide and its clear documentation made it an attractive style guide to reference.
 
 ### Learning Best Practices For Web Writing
 
 In addition to user guides, developers also write documentation for their peers and company stakeholders. Most of this writing exists in a web format. As such it is important to construct documents that maximize readibility on the web.
 
 #### Readability
+
 People read technical writing to retrieve information and not for pleasure (typically). We streamlined our writing to be clear, concise, and complete to provide the necessary information as effectively as possible. Key words were bolded for scannability and we used figures and lists whenever possible.
 
 We ensured that every procedure page had an overview that would give the reader a preview of the topic before going through the detailed steps. At the end, we included a conclusion to summarize what the reader would have accomplished from following the guide. 
 
 We used MkDoc's admonitions to highlight any information we wanted to stand out to the reader. 
 
-> inserting admonitions here
+<figure>
+  <img
+  src="docs/pages/images/admonitions/danger.png"
+  alt="The danger admonition.">
+  <figcaption>Specifies actions that may cause an error or will cause the application to crash.</figcaption>
+</figure>
+<figure>
+  <img
+  src="docs/pages/images/admonitions/failure.png"
+  alt="The failure admonition.">
+  <figcaption>Specifies actions that may lead to unexpected behaviour.</figcaption>
+</figure>
+<figure>
+  <img
+  src="docs/pages/images/admonitions/bug.png"
+  alt="The bug admonition.">
+  <figcaption>Specifies actions that may cause an error.</figcaption>
+</figure>
+<figure>
+  <img
+  src="docs/pages/images/admonitions/warning.png"
+  alt="The warning admonition.">
+  <figcaption>Specifies content that must be read before proceeding.</figcaption>
+</figure>
+<figure>
+  <img
+  src="docs/pages/images/admonitions/info.png"
+  alt="The info admonition.">
+  <figcaption>Indicates additional information or tips.</figcaption>
+</figure>
+<figure>
+  <img
+  src="docs/pages/images/admonitions/success.png"
+  alt="The success admonition.">
+  <figcaption>Indicates what success looks like.</figcaption>
+</figure>
 
 #### Chunking
 Due to the nature of our topic, we anticipated long informative pages. This can easily become difficult for a reader to follow. Knowing this, we focused on using sub-headings and figures to guide the reader.
