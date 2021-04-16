@@ -1,11 +1,11 @@
 site_name: Express User Documentation
 nav:
   - Home: "index.md"
+  - Project Structure: "pages/project-structure.md"
   - Configuration: "pages/configuration.md"
   - Installing Express: "pages/installing-express.md"
   - Routes & Routers: "pages/routes.md"
   - Middleware: "pages/middleware.md"
-  - Project Structure: "pages/project-structure.md"
   - Troubleshooting: "pages/troubleshooting.md"
   - Glossary: "pages/glossary.md"
 
