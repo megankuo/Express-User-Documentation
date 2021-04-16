@@ -12,6 +12,7 @@ These are the topics of this document
 - Writing routes
 - Using middleware
 
+
 ## How We Collaborated Together
 
 This user guide assignment occured while our classes were completely held online. Our main form of communication was over Discord instant messaging after we brainstormed our guide idea and instruction outline over Zoom.
