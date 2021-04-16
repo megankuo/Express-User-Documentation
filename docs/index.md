@@ -82,11 +82,13 @@ Each possible message block, from most important to least important:
 !!! danger
     Specifies actions that may cause an error or will cause the application to crash.
 
-!!! failure
-    Specifies actions that may lead to unexpected behaviour.
+[comment]: <> (!!! failure)
 
-!!! bug
-    Specifies actions that may cause an error.
+[comment]: <> (    Specifies actions that may lead to unexpected behaviour.)
+
+[comment]: <> (!!! bug)
+
+[comment]: <> (    Specifies actions that may cause an error.)
 
 !!! warning
     Specifies content that must be read before proceeding.
