@@ -1,4 +1,3 @@
-
 ## Overview
 
 In this section, we will walk you through how to set up your first **routes** for your Express server. Afterwards, we will see how we can clean up the code using [**routers**](/pages/routes/#setting-up-routers).
