@@ -83,8 +83,11 @@ After you have created your first subfolder in the project, we will be creating 
     > cd api
 
 4. Type each line of the commands below to create all of the nested subfolders that you will need.
+
     > mkdir controllers
+
     > mkdir middleware
+
     > mkdir routes
 
     If successful your folder structure should resemble the folder structure below:
@@ -122,8 +125,11 @@ Before we create more subfolders, make sure you navigate back to the root direct
    > cd public
 
 3. Type each line of the commands below to create all of the nested subfolders that you will inside of your public folder.
+
     > mkdir images
+
     > mkdir js
+
     > mkdir styles
 
     If successful your folder structure will resemble the example below:
@@ -165,9 +171,9 @@ Before we create more subfolders, make sure you navigate back to the root direct
 By the end of this section, you will have successfully learned the following:
 
 - [x] Why project stucture is important.
-- [x]How to organize the subfolders.
-- [x]How to organize nested subfolders.
-- [x]How to organize the folders inside of the public folder.
+- [x] How to organize the subfolders.
+- [x] How to organize nested subfolders.
+- [x] How to organize the folders inside of the public folder.
 
 Congratulations! 🎉 You can go ahead and click on the link below to learn more about how to configure your project:
 
