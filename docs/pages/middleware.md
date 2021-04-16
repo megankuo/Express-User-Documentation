@@ -89,6 +89,9 @@ In this section you'll walk through an example of adding several middleware to E
 
     Error-handling middleware allows you to catch and process errors that occur within the application.
 
+!!!success "Congratulations 👏"
+    That is for middleware! If it interests you, there is a lot more to middleware provided in the [Express Middleware Documentation](https://expressjs.com/en/guide/using-middleware.html#middleware.built-in)
+
 
 ## Conclusion
 
