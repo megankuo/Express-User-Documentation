@@ -114,13 +114,13 @@ and add a custom rule for illustrative purposes.
     {
         ...
         "scripts": {
-            "lint": "eslint . --fix --ext .js" // (1)
+            "lint": "eslint . --fix --ext .js"
         },
         ...
     }
     ```
    
-    1. Allows you to use `npm run lint` to run the ESLint linter on all JavaScript files in the root directory. It also silently fixes any *fixable* issues for you!
+    This script allows you to use `npm run lint` to run the ESLint on all JavaScript files in the project. It also silently fixes any *fixable* issues for you!
     
 4. Create a `server.js` file in the root of the directory:
 > touch server.js
