@@ -58,7 +58,6 @@ In the introduction, you will have created a new project folder with all of the 
       });
       
       ```
-      
       1. Import instance of Express Application created in `src/app.js`.
       2. Specify port number for server to listen on.
       3. Start server and listen on specified port.
@@ -80,7 +79,7 @@ In this last section, you will learn how to run your Express server on your **lo
         ...
     }
     ```
-   
+    
     1. This script allows you to use `npm run start` or `npm start` to start the Express server.
 
 2. Run the script create above to start the Express server:
@@ -89,10 +88,9 @@ In this last section, you will learn how to run your Express server on your **lo
 3. Open your internet browser of choice and type in the URL for the Express server:
 > [localhost:3000](http://localhost:3000)
 
-!!!success
-    
-    Once the page loads, you should see "Hello World!" in your browser.
-    This means that you have successfully installed and created your first working server!
+    !!!success
+        Once the page loads, you should see "Hello World!" in your browser.
+        This means that you have successfully installed and created your first working server!
 
 [comment]: <> (    ![Express Success]&#40;images/installing-express-step3b.png&#41;{ align=left })
 
