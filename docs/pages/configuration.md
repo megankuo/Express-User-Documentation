@@ -192,7 +192,7 @@ By the end of this section, you will have successfully learned the following:
 
 Great job 🤗. You can go ahead and click on the link below to move on to the next step:
 
-**[Installing Express](/pages/express-getting-started)**
+**[Installing Express](/pages/installing-express)**
 
 [^1]: [Why You Should Use ESLint, Prettier & EditorConfig](https://blog.theodo.com/2019/08/why-you-should-use-eslint-prettier-and-editorconfig-together/).
 [^2]: [Enforce your team’s coding style with Prettier and TsLint](https://itnext.io/enforce-your-team-coding-style-with-prettier-and-tslint-9faac5016ce7).

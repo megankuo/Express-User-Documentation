@@ -39,10 +39,10 @@ Before proceeding, ensure you have the following installed:
 The main sections of the documentation are summarized below:
 
 - **[Elaboration on Project Structure](pages/project-structure)**
-- **[Configuring Project for Collaboration](pages/configuration.md)**
-- **[Installing Express.js](pages/express-getting-started.md)**
-- **[Adding Routes](pages/routes.md)**
-- **[Middleware](pages/middleware.md)**
+- **[Configuring Project for Collaboration](pages/configuration)**
+- **[Installing Express.js](pages/install-express)**
+- **[Adding Routes](pages/routes)**
+- **[Middleware](pages/middleware)**
 
 
 ## Typographical Conventions
