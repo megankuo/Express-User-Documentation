@@ -390,7 +390,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Unable to load the localhost page</td>
+<td>Unable to load the localhost page in browser</td>
 <td>Your URL does not match your port number.</td>
 <td>Double check what port you have set in <code>server.js</code> and if your browser URL is <code>localhost:PORT</code> with <code>PORT</code> being the number you have set.</td>
 </tr>
@@ -405,17 +405,17 @@
 <td>Close any additional servers that might be running. Only one app per port is possible.</td>
 </tr>
 <tr>
-<td>ESLint warns you about the use of the console</td>
+<td>ESLint warns you about the use of the <code>console</code></td>
 <td>You have not configured ESLint to accept <code>console.log</code>.</td>
 <td>Make sure you have <code>rules: {'no-console': 'off' },</code> set in <code>.eslintrc.js</code> as directed in <a href="/pages/configuration/#customization">Eslint Customization</a></td>
 </tr>
 <tr>
-<td>"TypeError: app.listen is not a function" or similar</td>
+<td><code>TypeError: app.listen is not a function</code> or similar</td>
 <td>You forgot to export one of your modules (ie. app or router).</td>
 <td>Make sure you have <code>module.exports = router;</code> at the end of your router files and <code>module.exports = app;</code> where you created your new Express app.</td>
 </tr>
 <tr>
-<td>"Error: Cannot find module '&lt;NAME>'"</td>
+<td><code>Error: Cannot find module &lt;NAME&gt;</code></td>
 <td>You're requiring the module from the wrong path.</td>
 <td>Double check the path in the <code>require(PATH)</code> is pointing to the correct location.</td>
 </tr>

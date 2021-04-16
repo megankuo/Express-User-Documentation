@@ -434,7 +434,7 @@
                   <h1>Configuration</h1>
                 
                 <h2 id="overview">Overview</h2>
-<p>In this section you will explore the use of <a href="https://eslint.org/"><strong>ESLint</strong></a> and <a href="https://prettier.io/"><strong>Prettier</strong></a> to standards for writing and formatting code. 
+<p>In this section you will explore the use of <a href="https://eslint.org/"><strong>ESLint</strong></a> and <a href="https://prettier.io/"><strong>Prettier</strong></a> to establish standards for writing and formatting code. 
 As is common practice, you will use Prettier to handle formatting-related issues and ESLint for non-formatting (code quality) issues - see <a href="https://prettier.io/docs/en/comparison.html">Prettier vs. Linters</a>.
 This is particularly important for teams where collaboration is necessary. Using ESLint and Prettier provide many benefits, for instance<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
 <ul>
@@ -447,7 +447,7 @@ This is particularly important for teams where collaboration is necessary. Using
 When potential employers look at your GitHub projects, one the first things they look at is the coding style.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
 <p>You'll start by installing ESLint and Prettier, then walking through an example of how to start customizing the rules you want to adhere to.</p>
 <h2 id="installation-initial-setup">Installation &amp; Initial Setup</h2>
-<p>Before you are able to adding code style and formatter rules, you need to install a few packages using the terminal, as outlined below:</p>
+<p>Before you are able to add code style and formatting rules, you need to install a few packages using the terminal, as outlined below:</p>
 <div class="admonition error">
 <p class="admonition-title">Prerequisite</p>
 <p>You will use the <code>touch</code> command for creating files via the command line. <code>touch</code> is native on Linux and Unix systems. If you are on a Windows machine you can install <code>touch</code> globally by running the following command: </p>
@@ -456,6 +456,12 @@ When potential employers look at your GitHub projects, one the first things they
 </blockquote>
 </div>
 <ol>
+<li>
+<p>Create a new <code>package.json</code> file using the default configuration:</p>
+<blockquote>
+<p>npm init -y</p>
+</blockquote>
+</li>
 <li>
 <p>Install Prettier:</p>
 <blockquote>
@@ -527,8 +533,8 @@ For a detailed overview of all the possible rules for Prettier, see <a href="htt
 <p>Prettier is highly opinionated which means you have much less fine-tuning control over formatting. 
 On the other hand, ESLint is much less opinionated and hence provides you with more control relating to code-quality standards.
 Thankfully, well-known companies such as Airbnb and Google have written their own code style guides - see <a href="https://github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a> and <a href="https://google.github.io/styleguide/javaguide.html">Google Java Style Guide</a>. 
-ESLint allows you to 'extend' or import the rules from either of the code-styles guides mentioned above. 
-It is worth noting that there is no hard and fast rule for establishing code-style rules and guidelines. 
+ESLint allows you to 'extend' or import the rules from either of the code style guides mentioned above. 
+It is worth noting that there is no hard and fast rule for establishing code style rules and guidelines. 
 As an example, you will use the <a href="https://github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a> as a base config
 and add a custom rule for illustrative purposes.</p>
 <ol>
@@ -591,7 +597,7 @@ and add a custom rule for illustrative purposes.</p>
 <p class="admonition-title">Warning</p>
 <p>You may have also noticed that ESLint warns you about the use of the <code>console</code>. 
 This is because, by default, the airbnb code style guide that we extended from has chosen to warn developers on the use on the console.
-ESLint makes it very easy to overwrite <strong>any</strong> code-style rules you want. To allow the use of the <code>console</code>, see steps 8 &amp; 9 below 👇.</p>
+ESLint makes it very easy to overwrite <strong>any</strong> code style rules you want. To allow the use of the <code>console</code>, see steps 8 &amp; 9 below 👇.</p>
 </div>
 </li>
 <li>
@@ -627,9 +633,11 @@ ESLint makes it very easy to overwrite <strong>any</strong> code-style rules you
 <li><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">VS Code ESLint Extension</a>: allows you you see ESLint errors while you code (even before running <code>npm run lint</code>)</li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">VS Code Prettier Extension</a>:  allows you to format files automatically, everytime you save them.</li>
 </ul>
-<p>ESLint and Prettier also support other IDE's and editors:
-- <a href="https://eslint.org/docs/user-guide/integrations">ESLint Editor Integrations</a>
-- <a href="https://prettier.io/docs/en/editors.html">Prettier Editor Integrations</a></p>
+<p>ESLint and Prettier also support other IDE's and editors:</p>
+<ul>
+<li><a href="https://eslint.org/docs/user-guide/integrations">ESLint Editor Integrations</a></li>
+<li><a href="https://prettier.io/docs/en/editors.html">Prettier Editor Integrations</a></li>
+</ul>
 </div>
 <h2 id="conclusion">Conclusion</h2>
 <p>By the end of this section, you will have successfully learned the following:</p>

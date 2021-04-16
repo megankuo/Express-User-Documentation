@@ -450,7 +450,7 @@
                 
                 
                 <h1 id="introduction">Introduction</h1>
-<p>Welcome! 👋 This documentation will guide you through setting up a <a href="https://nodejs.org/"><strong>Node.js</strong></a> project for building small to medium-scale RESTful APIs using <a href="https://expressjs.com/"><strong>Express.js</strong></a>.
+<p>Welcome! 👋 This documentation will guide you through setting up a <a href="https://nodejs.org/"><strong>Node.js</strong></a> project for building small to medium-scale RESTful <a href="">API</a>s using <a href="https://expressjs.com/"><strong>Express.js</strong></a>.
 The aim is to provide a sustainable structure that simplifies complex projects into smaller, more reusable, and modular components.
 We will also focus on best practices and various ways to optimize workflow when working collaboratively.</p>
 <blockquote>
@@ -478,7 +478,7 @@ We will also focus on best practices and various ways to optimize workflow when 
 <li><a href="https://code.visualstudio.com/download"><strong>Visual Studio Code</strong></a></li>
 </ul>
 <blockquote>
-<p>Although the screenshots provided will be from VS Code, <em>most</em> of the instructions in this documentation are independent of your IDE.
+<p>Although any screenshots provided will be from VS Code, <em>most</em> of the instructions in this documentation are independent of your IDE.
 IDEs such as <a href="https://visualstudio.microsoft.com/">Visual Studio</a>, <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>, and <a href="https://atom.io/">Atom</a> are also viable alternatives.</p>
 </blockquote>
 <h2 id="procedures-overview">Procedures Overview</h2>
@@ -494,8 +494,8 @@ IDEs such as <a href="https://visualstudio.microsoft.com/">Visual Studio</a>, <a
 <ol>
 <li>
 <p>Some code snippets may have clickable numbers that can be useful 
-if you do not understand what a specific piece of code does. 
-   See an example of this below:</p>
+if you do not understand the function of a piece of code. Code snippets can be copied by clicking the icon
+   in the top right corner. See an example of this below:</p>
 <div class="annotate highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">sum</span> <span class="o">=</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">,</span> <span class="mf">0</span><span class="p">);</span> <span class="c1">// (1)</span>
 <span class="p">};</span>
@@ -505,15 +505,15 @@ if you do not understand what a specific piece of code does.
 </ol>
 </li>
 <li>
-<p>Changes to a previously created files will be highlighted in yellow:</p>
+<p>Modifications made to previously created files will be highlighted in yellow:</p>
 <div class="annotate highlight"><pre><span></span><code><span class="kd">const</span> <span class="nx">sum</span> <span class="o">=</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
 <span class="hll">    <span class="kd">const</span> <span class="nx">multiplier</span> <span class="o">=</span> <span class="mf">2</span><span class="p">;</span>
-</span>    <span class="k">return</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">multiplier</span> <span class="o">*</span> <span class="p">(</span><span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">),</span> <span class="mf">0</span><span class="p">);</span>
-<span class="p">};</span>
+</span><span class="hll">    <span class="k">return</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">multiplier</span> <span class="o">*</span> <span class="p">(</span><span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">),</span> <span class="mf">0</span><span class="p">);</span>
+</span><span class="p">};</span>
 </code></pre></div>
 </li>
 <li>
-<p>File names and npm packages will be formatted like: <code>somefile.js</code>.</p>
+<p>File names, npm packages, npm scripts will be formatted similar to: <code>somefile.js</code>.</p>
 </li>
 <li>
 <p>Instructions that require you to run a command in terminal will be formatted like:</p>
@@ -523,7 +523,7 @@ if you do not understand what a specific piece of code does.
 </li>
 </ol>
 <h2 id="notes-and-warning-messages">Notes and Warning Messages</h2>
-<p>Throughout the documentation, we will use message blocks to alert you to relevant information. 
+<p>Throughout the documentation, we will use message blocks to inform you of relevant information. 
 Each possible message block, from most important to least important:</p>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>

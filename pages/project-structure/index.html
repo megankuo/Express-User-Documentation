@@ -434,19 +434,21 @@
                   <h1>Project Structure</h1>
                 
                 <h2 id="overview">Overview</h2>
-<p>When working on a project, it is important to have a clear project structure. Although the importance of having a project structure may seem insignificant when working on a small project, programmers and engineers will often collaborate with each other to write thousands of lines of code. It would be pure chaos if there was no defined project structure to keep all of your code organized. On top of this, troubleshooting issues and implementing new features would be a nightmare.</p>
+<p>When working on a project, it is important to have a clear project structure. 
+Although the importance of having a project structure may seem insignificant when working on a small project, programmers and engineers will often collaborate with each other to write thousands of lines of code. 
+It would be pure chaos if there were no defined project structure to keep all of your code organized. On top of this, troubleshooting issues and implementing new features would be a nightmare.</p>
 <div class="admonition info">
 <p class="admonition-title">Model-View-Controller (MVC)</p>
-<p>An MVC is a software design pattern that is used to divide all related program logic into three core logical components called the <strong>Model</strong>, <strong>View</strong>, and <strong>Controller</strong>.
+<p>MVC is a software design pattern used to divide all related program logic into three core logical components: the <strong>Model</strong>, <strong>View</strong>, and <strong>Controller</strong>.
 The Controller is used to control what View is displayed while using the Model to provide data for the View to render.</p>
 </div>
-<p>In this guide we will be using this project structure to guide you towards creating a small to medium-sized project. As your project grows larger, you will want to modify and personalize your project as you find is necessary.</p>
-<p>Please refer to the example below to see the overview of the project structure:</p>
+<p>This guide will be using this project structure to guide you towards creating a small to medium-sized project. As your project grows larger, you will want to modify and personalize your project to fit your needs.</p>
+<p>The project structure that you will be using is shown below:</p>
 <div class="highlight"><pre><span></span><code>    <span class="p">|</span>-- project-name              <span class="c1"># Root Directory</span>
         <span class="p">|</span>-- src/                  <span class="c1"># Application Programming Interfaces</span>
         <span class="p">|</span>   <span class="p">|</span>-- api/              <span class="c1"># API Endpoints (URIs)</span>
         <span class="p">|</span>   <span class="p">|</span>   <span class="p">|</span>-- routes/       <span class="c1"># API Endpoints (URIs)</span>
-        <span class="p">|</span>   <span class="p">|</span>--app.js             <span class="c1"># Entry Point File</span>
+        <span class="p">|</span>   <span class="p">|</span>--app.js             <span class="c1"># Entry Point File (Express Application)</span>
         <span class="p">|</span>-- node_modules/         <span class="c1"># Downloaded Libraries</span>
         <span class="p">|</span>-- .eslintrc.js          <span class="c1"># Linting Rules </span>
         <span class="p">|</span>-- .prettierrc.js        <span class="c1"># Code Formatting Rules</span>
@@ -459,35 +461,35 @@ The Controller is used to control what View is displayed while using the Model t
 <p>Go ahead and up your project in <a href="https://code.visualstudio.com/"><strong>Visual Studio Code</strong></a>.</p>
 <ol>
 <li>
-<p>Type the command below in the Terminal to create a docs folder.</p>
+<p>Create a <code>src</code> folder in the root directory:</p>
 <blockquote>
 <p>mkdir src</p>
 </blockquote>
 </li>
 </ol>
 <h2 id="create-nested-subfolders">Create Nested Subfolders</h2>
-<p>After you have created your first subfolder in the project, we will be creating more folders inside of the <code>src</code> folder. The newly created folders are called nested subfolders. The source (src) folder will contain all of the files needed to build your project.</p>
+<p>After you have created your first subfolder in the project, you will add more folders inside the <code>src</code> folder. The newly created folders are called nested subfolders. The newly created folders are called nested subfolders. The source (src) folder will contain all of the files needed to build your project.</p>
 <ol>
 <li>
-<p>Type the command below to move into your <code>src</code> directory.</p>
+<p>Navigate into the <code>src</code> folder created above:</p>
 <blockquote>
 <p>cd src</p>
 </blockquote>
 </li>
 <li>
-<p>Type the command below to create an <code>api</code> folder inside the <code>src</code>.</p>
+<p>Create an <code>api</code>folder inside <code>src</code>:</p>
 <blockquote>
 <p>mkdir api</p>
 </blockquote>
 </li>
 <li>
-<p>Type the command below to move into your <code>api</code> directory.</p>
+<p>Navigate into the <code>api</code> folder create above:</p>
 <blockquote>
 <p>cd api</p>
 </blockquote>
 </li>
 <li>
-<p>Type the command below to create <code>routes</code> folder inside the <code>api</code> folder.</p>
+<p>Create a <code>routes</code> folder to house all your api endpoints:</p>
 <blockquote>
 <p>mkdir routes</p>
 </blockquote>
@@ -527,9 +529,9 @@ The Controller is used to control what View is displayed while using the Model t
 <h2 id="conclusion">Conclusion</h2>
 <p>By the end of this section, you will have successfully learned the following:</p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Why project structure is important</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> How to organize the subfolders</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> How to organize nested subfolders</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Why project structure is important.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> How to organize the subfolders.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> How to organize nested subfolders.</li>
 </ul>
 <p>Congratulations! 🎉 You can go ahead and click on the link below to learn more about how to configure your project:</p>
 <p><strong><a href="../configuration/">Configuration</a></strong></p>

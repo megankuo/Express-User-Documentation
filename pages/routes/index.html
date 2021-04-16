@@ -448,15 +448,15 @@
                   <h1>Routes & Routers</h1>
                 
                 <h2 id="overview">Overview</h2>
-<p>In this section, we will walk you through how to set up your first <strong>routes</strong> for your Express server. Afterwards, we will see how we can clean up the code using <a href="/pages/routes/#setting-up-routers"><strong>routers</strong></a>.</p>
+<p>This section will walk you through how to set up your first routes for your Express server. Afterwards, we will see how we can clean up the code using <a href="#setting-up-routers"><strong>routers</strong></a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Routes &amp; HTTP Requests</p>
 <p>In Express, a route interprets the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">HTTP request method</a></strong> made to the server.</p>
 </div>
-<p><strong>Routing</strong> is the action of determining what information is display or what action is taken when a user navigates or triggers a specified <strong>endpoint</strong> or <strong>path</strong>.</p>
+<p>Routing is the action of determining what information is display or what action is taken when a user navigates or triggers a specified <a href="../glossary/"><strong>endpoint</strong></a> or <strong>path</strong>.</p>
 <p>A simple route comprises the following components</p>
 <ul>
-<li><code>app</code> : the instance of Express that you have created in <a href="link">Getting Started</a></li>
+<li><code>app</code> : the instance of Express that you have created in <a href="../installing-express/">Getting Started</a></li>
 <li><code>method</code>:  the Express <a href="https://expressjs.com/en/4x/api.html#app.METHOD"><strong>route method</strong></a> corresponding to HTTP requests (eg. <code>get</code>, <code>post</code>, or <code>put</code>)</li>
 <li><code>path</code>: the defined endpoint of the request</li>
 <li><code>handler</code>: the function that is called when the route is hit</li>
@@ -470,7 +470,7 @@
 <p>The <code>GET</code> method is used to request data from a server.<br />
 The <code>POST</code> method is used to send data to create date or update data on a server. <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 </div>
-<p>We left off in <a href="../installing-express/">Installing Express</a> with one route already set up to the root directory (<code>'/'</code>) from <code>src/app.js</code>. 
+<p>We left off in <a href="../installing-express/">Installing Express</a> with the index route already set up. 
 The handler for this route is an anonymous function that takes in two parameters. 
 The first parameter represents the HTTP request object (often written as <code>request</code> or <code>req</code>) and the second parameter is the response object (written as <code>response</code> or <code>res</code>).</p>
 <p>A <a href="https://expressjs.com/en/guide/routing.html#response-methods">response method</a> is called in the handler to terminate the request-response cycle.</p>
@@ -484,7 +484,7 @@ The first parameter represents the HTTP request object (often written as <code>r
 <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">app</span><span class="p">;</span>
 </code></pre></div>
 <ol>
-<li><code>'/'</code> (forward slash) is your root directory.</li>
+<li><code>'/'</code> (forward slash) is your root route.</li>
 <li><code>res.send()</code> can send back various types of content.</li>
 </ol>
 <div class="admonition info">
@@ -495,12 +495,12 @@ The first parameter represents the HTTP request object (often written as <code>r
 <p>As an example, let's create a route to display a contact page in the form of a static HTML page.</p>
 <ol>
 <li>
-<p>Start with the route method and insert the path for your Express server to listen for.
+<p>Start with the route method and insert the path for your Express server to listen for:
     <div class="annotate highlight"><pre><span></span><code><span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/contact&#39;</span><span class="p">);</span>
 </code></pre></div></p>
 </li>
 <li>
-<p>Insert an empty handler that has the parameters for the request and response objects<br />
+<p>Insert an empty handler that has the parameters for the request and response objects:<br />
     <div class="annotate highlight"><pre><span></span><code><span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/contact&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="p">});</span>
 </code></pre></div></p>
 </li>
