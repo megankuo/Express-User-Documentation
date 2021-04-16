@@ -165,9 +165,9 @@ Before we create more subfolders, make sure you navigate back to the root direct
 By the end of this section, you will have successfully learned the following:
 
 - [x] Why project stucture is important.
-- [x]How to organize the subfolders.
-- [x]How to organize nested subfolders.
-- [x]How to organize the folders inside of the public folder.
+- [x] How to organize the subfolders.
+- [x] How to organize nested subfolders.
+- [x] How to organize the folders inside of the public folder.
 
 Congratulations! 🎉 You can go ahead and click on the link below to learn more about how to configure your project:
 
