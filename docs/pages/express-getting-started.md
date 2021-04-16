@@ -50,15 +50,15 @@ In order to provide better clarity, this guide will focus on providing instructi
 2. Type the code below inside of your app.js file:
 
   ``` {.js .annotate}
-   const express = require('express'); (1)
-   const app = express(); (2)
-   const port = 3000; (3)
+   const express = require('express'); // (1)
+   const app = express(); // (2)
+   const port = 3000; // (3)
 
-   app.get('/', (req, res) => { (4)
+   app.get('/', (req, res) => { // (4)
      res.send('Hello World!'); 
    })
 
-   app.listen(port, () => { (5)
+   app.listen(port, () => { // (5)
      console.log(`Example app listening at http://localhost:${port}`);
    })
    ```
@@ -92,4 +92,4 @@ By the end of this section, you will have successfully learned the following:
 
 Great job 🤗. You can go ahead and click on the link below to move on to the next step:
 
-**[Adding Routes]()**
+**[Adding Routes](/pages/routes)**
